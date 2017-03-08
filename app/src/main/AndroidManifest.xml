@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qingguo">
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="菁果监测"
+        android:name="com.qingguo.MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 注册广播 -->
+        <receiver android:name="com.qingguo.tools.NetReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+
+
+        <service
+            android:enabled="true"
+            android:persistent="true"
+            android:name="com.qingguo.Service.WarningService"
+            android:process="com.qingguo.Service.MyService"
+            >
+            <intent-filter
+                android:priority="2147483647"
+                >
+                <action android:name="com.qingguo.Service.MyService" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".GuideActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetectionActivity"
+            android:label="DetectionActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.DetectionActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectTankActivity"
+            android:label="SelectTankActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.SelectTankActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectVideoActivity"
+            android:label="SelectVideoActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.SelectVideoActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectWaterActivity"
+            android:label="SelectWaterActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.SelectWaterActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectExplosiveActivity"
+            android:label="SelectExplosiveActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.SelectExplosiveActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExplosiveActivity"
+            android:label="ExplosiveActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.ExplosiveActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity1"
+            android:label="WaterActivity1">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity1"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity2"
+            android:label="WaterActivity2">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity2"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity3"
+            android:label="WaterActivity3">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity3"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity4"
+            android:label="WaterActivity4">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity4"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity5"
+            android:label="WaterActivity5">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity5"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity6"
+            android:label="WaterActivity6">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity6"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity7"
+            android:label="WaterActivity7">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity7"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity8"
+            android:label="WaterActivity8">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity8"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity9"
+            android:label="WaterActivity9">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity9"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity10"
+            android:label="WaterActivity10">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity10"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankActivity1"
+            android:label="TankActivity1">
+            <intent-filter>
+                <action android:name="com.qingguo.TankActivity1"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankActivity2"
+            android:label="TankActivity2">
+            <intent-filter>
+                <action android:name="com.qingguo.TankActivity2"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankActivity3"
+            android:label="TankActivity3">
+            <intent-filter>
+                <action android:name="com.qingguo.TankActivity3"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankActivity4"
+            android:label="TankActivity4">
+            <intent-filter>
+                <action android:name="com.qingguo.TankActivity4"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankActivity5"
+            android:label="TankActivity5">
+            <intent-filter>
+                <action android:name="com.qingguo.TankActivity5"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankActivity6"
+            android:label="TankActivity6">
+            <intent-filter>
+                <action android:name="com.qingguo.TankActivity6"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterActivity11"
+            android:label="WaterActivity11">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterActivity11"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrafficActivity"
+            android:label="TrafficActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.TrafficActivity"/>
+            </intent-filter>
+        </activity>
+    <activity
+        android:name=".HistoricalWaterActivity"
+        android:label="HistoricalWaterActivity">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalWaterActivity"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".HistoricalExplosiveActivity"
+        android:label="HistoricalExplosiveActivity">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalExplosiveActivity"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".HistoricalTankActivity"
+        android:label="HistoricalTankActivity">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalTankActivity"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".HistoricalTank1"
+        android:label="HistoricalTank1">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalTank1"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".HistoricalTank2"
+        android:label="HistoricalTank2">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalTank2"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".HistoricalTank3"
+        android:label="HistoricalTank3">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalTank3"/>
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".HistoricalTank4"
+        android:label="HistoricalTank4">
+        <intent-filter>
+            <action android:name="com.qingguo.HistoricalTank4"/>
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="LoginActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.LoginActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoricalExplosive1"
+            android:label="HistoricalExplosive1">
+            <intent-filter>
+
+                <action android:name="com.qingguo.HistoricalExplosive1"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoricalWater1"
+            android:label="HistoricalWater1">
+            <intent-filter>
+                <action android:name="com.qingguo.HistoricalWater1"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoricalWater2"
+            android:label="HistoricalWater2">
+            <intent-filter>
+                <action android:name="com.qingguo.HistoricalWater2"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoricalWater3"
+            android:label="HistoricalWater3">
+            <intent-filter>
+
+                <action android:name="com.qingguo.HistoricalWater3"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoricalWater4"
+            android:label="HistoricalWater4">
+            <intent-filter>
+                <action android:name="com.qingguo.HistoricalWater4"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WarningActivity"
+            android:label="WarningActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.WarningActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterWarningActivity"
+            android:label="WaterWarningActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.WaterWarningActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TankWarningActivity"
+            android:label="TankWarningActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.TankWarningActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExplosiveWarningActivity"
+            android:label="ExplosiveWarningActivity">
+            <intent-filter>
+                <action android:name="com.qingguo.ExplosiveWarningActivity"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".FxService"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#000000"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="实时数据"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textSize="25sp"
+                android:background="#99CC99"
+                android:onClick="OnClickSelectExplosive"
+                android:text="炸药车" />
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00CEDE"
+                android:textSize="25sp"
+                android:onClick="OnClickSelectWater"
+                android:text="水相" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="#FFFF99"
+                android:textSize="25sp"
+                android:onClick="OnClickSelectTank"
+                android:text="油相" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:background="#FF9966"
+                android:textSize="25sp"
+                android:layout_height="fill_parent"
+                android:onClick="OnClickSelectVideo"
+                android:text="视频监控" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:background="#99CCCC"
+                android:textSize="25sp"
+                android:layout_height="fill_parent"
+                android:text="敬请期待" />
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

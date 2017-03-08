@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#000000"
+            android:gravity="center_vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:text="返回"
+                android:background="#727272"
+                android:onClick="onClickReturnTank"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="2#储存罐"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/start_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickStart"
+            android:text="启动流量显示悬浮窗"/>
+        <Button
+            android:id="@+id/remove_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickStop"
+            android:text="关闭流量显示悬浮窗"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="shuaxin"
+        android:text="点击获取累计消耗流量"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/update"
+        android:textSize="16sp"
+        android:text="这里显示累计消耗流量" />
+</LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="小贴士:"
+    android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬浮窗需要在手机设置中的应用管理中给予应用权限才能开启。"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

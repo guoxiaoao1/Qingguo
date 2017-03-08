@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/myScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#000000"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="水相预警设置"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="热水罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning1"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改热水罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning1"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+\        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dbdbdb"
+        android:layout_margin="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1#蒸汽罐预警温度设定值"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:id="@+id/setvalueWaterWarning2"
+                android:text="hello"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="修改1#蒸汽罐预警温度"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_weight="0.97"
+                android:hint="100"
+                android:digits="0123456789"
+                android:id="@+id/getsetvaluesetvalueWaterWarning2"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ChangesetvaluesetvalueWaterWarning2"
+                android:text="保存"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="2#蒸汽罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning3"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改2#蒸汽罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning3"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning3"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1#溶解罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning4"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改1#溶解罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning4"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning4"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="2#储存罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning5"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改2#储存罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning5"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning5"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="3#溶解罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning6"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改3#溶解罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning6"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning6"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="4#储存罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning7"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改4#储存罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning7"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning7"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="5#储存罐预警温度设定值"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:id="@+id/setvalueWaterWarning8"
+                    android:text="hello"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="修改5#储存罐预警温度"
+                    android:layout_weight="3"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.97"
+                    android:hint="100"
+                    android:digits="0123456789"
+                    android:id="@+id/getsetvaluesetvalueWaterWarning8"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangesetvaluesetvalueWaterWarning8"
+                    android:text="保存"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

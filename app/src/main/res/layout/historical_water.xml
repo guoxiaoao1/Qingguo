@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/myScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#000000"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="水相历史数据"/>
+        </RelativeLayout>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*"
+            android:layout_alignParentTop="true" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/tank1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="#FFFF99"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickHistoricalWater1"
+                    android:text="1#发药管" />
+
+
+                <Button
+                    android:id="@+id/tank2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:onClick="OnClickHistoricalWater2"
+                    android:background="#FFFF99"
+                    android:layout_margin="2dp"
+                    android:text="2#发药管" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/tank3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:onClick="OnClickHistoricalWater3"
+                    android:background="#FFFF99"
+                    android:layout_margin="2dp"
+                    android:text="3#发药管" />
+
+
+                <Button
+                    android:id="@+id/tank4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFF99"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickHistoricalWater4"
+                    android:text="4#发药管" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/tank7"
+                    android:layout_width="wrap_content"
+                    android:background="#FFFF99"
+                    android:layout_margin="2dp"
+                    android:layout_height="120dp"
+                    android:text="添加更多" />
+
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

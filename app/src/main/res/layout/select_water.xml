@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/myScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#000000"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="水箱"/>
+        </RelativeLayout>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*"
+            android:layout_alignParentTop="true" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/water1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater1"
+                    android:text="热水罐" />
+
+
+                <Button
+                    android:id="@+id/water2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater2"
+                    android:text="1#蒸汽罐" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/water3"
+                    android:layout_width="wrap_content"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:layout_height="120dp"
+                    android:onClick="OnClickWater3"
+                    android:text="2#蒸汽罐" />
+
+
+                <Button
+                    android:id="@+id/water4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater4"
+                    android:text="1#溶解罐" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/water5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:onClick="OnClickWater5"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:text="2#储存罐" />
+
+
+                <Button
+                    android:id="@+id/water6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater6"
+                    android:text="3#溶解罐" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/water7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater7"
+                    android:text="4#储存罐" />
+
+
+                <Button
+                    android:id="@+id/water8"
+                    android:layout_width="wrap_content"
+                    android:onClick="OnClickWater8"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:layout_height="fill_parent"
+                    android:text="5#储存罐" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/water9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater9"
+                    android:text="1#位炸药车" />
+                <Button
+                    android:id="@+id/water10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater10"
+
+                    android:text="2#位炸药车" />
+
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/water11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:onClick="OnClickWater11"
+
+                    android:text="溶液泵" />
+                <Button
+                    android:id="@+id/water12"
+                    android:layout_width="wrap_content"
+                    android:background="#00CEDE"
+                    android:layout_margin="2dp"
+                    android:layout_height="120dp"
+                    android:text="期待更多" />
+
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

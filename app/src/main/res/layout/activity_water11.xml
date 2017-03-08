@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    tools:context=".ExplosiveActivity"
+    android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#000000"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="实时数据（等待开发）"/>
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="*"
+                android:layout_alignParentTop="true" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="25sp"
+                        android:background="#f1b85d"
+                        android:text="1#溶液泵" />
+
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:textSize="25sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="2#溶液泵" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="25sp"
+                        android:layout_weight="2"
+                        android:text="3#溶液泵" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="#f1b85d"
+                        android:textSize="25sp"
+                        android:layout_weight="2"
+                        android:text="4#溶液泵" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="#f1b85d"
+                        android:layout_weight="2"
+                        android:textSize="25sp"
+                        android:text="5#溶液泵" />
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:textSize="25sp"
+                        android:text="6#溶液泵" />
+
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>

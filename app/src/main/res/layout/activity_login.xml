@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#000000"
+        android:gravity="center_vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="返回"
+            android:background="#727272"
+            android:onClick="onClickReturnMenu"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="注册"/>
+    </RelativeLayout>
+
+    <EditText
+    android:id="@+id/CreateUsername"
+    android:background="#FFFFFF"
+    android:layout_margin="5dp"
+        android:padding="5dp"
+    android:textColor="#4a4a4a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入一个注册的用户名..."/>
+
+    <EditText
+        android:id="@+id/CreateUserPassword"
+        android:background="#FFFFFF"
+        android:textColor="#4a4a4a"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入一个注册的密码..."/>
+
+    <EditText
+        android:id="@+id/CreateUserPassWorldSecond"
+        android:background="#FFFFFF"
+        android:textColor="#4a4a4a"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请确认输入的密码..."/>
+
+    <EditText
+        android:id="@+id/ServiceAddress"
+        android:background="#FFFFFF"
+        android:textColor="#4a4a4a"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入服务器地址"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLogin"
+        android:layout_gravity="right"
+        android:text="注册"/>
+</LinearLayout>

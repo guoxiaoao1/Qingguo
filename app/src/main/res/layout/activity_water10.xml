@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/myScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/explosive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fcfcfc"
+        tools:context=".WaterActivity10">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#000000"
+                android:gravity="center_vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="返回"
+                    android:background="#727272"
+                    android:onClick="onClickReturnWater"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:text="2#位炸药车"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="45dp"
+
+                android:gravity="center_vertical">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="加载中。。。。"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Servera1"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true" />
+
+                </TableRow>
+            </RelativeLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="*"
+                android:layout_alignParentTop="true" >
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="80dp"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:text="温度:"/>
+
+                        <TextView
+                            android:text="0°C"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera2"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="液位:"/>
+
+                        <TextView
+                            android:text="0m"
+
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera3"
+                            android:gravity="center"
+                            android:textSize="20sp"
+
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+
+                    android:id="@+id/tableRow2"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="80dp"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="剩余药量:"/>
+
+                        <TextView
+                            android:text="0t"
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera4"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:text="本次已加:"/>
+
+                        <TextView
+                            android:text="0t"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera5"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="80dp"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="本次待加:"/>
+
+                        <TextView
+                            android:text="0t"
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera6"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="20sp"
+                            android:text="设定值:"/>
+
+                        <TextView
+                            android:text="0t"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera7"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#fcfcfc"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="瞬时流量:"/>
+
+                        <TextView
+                            android:text="0m/s"
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:textSize="20sp"
+
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera8"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent" >
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="fill_parent"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="3#流量计瞬时流速:"/>
+
+                        <TextView
+                            android:text="0m/s"
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:textSize="20sp"
+
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera9"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_height="80dp"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="4#流量计瞬时流速:"/>
+
+                        <TextView
+                            android:text="0m/s"
+                            android:layout_weight="1"
+                            android:layout_width="fill_parent"
+                            android:textSize="20sp"
+
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera10"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow13"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="#fcfcfc"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="累计流量:"/>
+
+                        <TextView
+                            android:text="0m/s"
+                            android:textSize="20sp"
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera11"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow14"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" >
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="80dp"
+
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="3#流量计累计流量:"/>
+
+                        <TextView
+                            android:text="0m/s"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera12"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0px"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="fill_parent"
+                        android:background="#fcfcfc"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="4#流量计累计流量:"/>
+
+                        <TextView
+                            android:text="0m/s"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Servera13"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

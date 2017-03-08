@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/myScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tank1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".TankActivity1">
+
+        <!--<com.github.mikephil.charting.charts.LineChart-->
+        <!--android:id="@+id/chart1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="400dp"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#000000"
+                android:gravity="center_vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="返回"
+                    android:background="#727272"
+                    android:onClick="onClickReturnTank"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="柴油罐"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="累计流量"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_marginLeft="160dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Servera5"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="设定值"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_marginLeft="160dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Servera6"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="201dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="温度(单位:°C):"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_marginLeft="160dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Servera1"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="201dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="液位（单位:m):"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_marginLeft="160dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Servera2"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart3"
+                android:layout_width="match_parent"
+                android:layout_height="201dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="本次待加"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_marginLeft="160dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Servera3"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart4"
+                android:layout_width="match_parent"
+                android:layout_height="201dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="瞬间流量"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_marginLeft="160dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Servera4"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
